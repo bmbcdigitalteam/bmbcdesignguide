@@ -1,0 +1,628 @@
+/* #region Notes */
+
+/* todo Make accessible */
+/* todo Make responsive */
+/* todo Hosting options: Sharepoint - may need redesign - low code, PowerApps - different solutions, Ask Kyle about hosting solutions */
+/* todo Check copyright of assets */
+/* todo Reading order? */
+/* todo Check Table headers reason on all document types - screen reader? And add tutorial */
+/* todo Check errors vs warnings */
+/* todo Merge slide images for efficiency */
+/* todo Comments and suggestions? */
+
+
+/* * Remove text from slides and put in html */
+/* * Keep nav open on entering new page? */
+/* * Fix powerpoint/missing-audio-or-video-subtitles nav font */
+/* * Add Designers, External Software, Fonts and Text alignment to general */
+/* * Ask if Brace are converting jpg to webp automatically or if we need to start doing it - does Umbraco render .webp? */
+/* * Ask if page names be generic eg. Images or the exact name of the error? Check with Chris */
+/* * Redesign slideshow - include slide number and make arrows more visible */
+/* * Find out if table headers error apply to Word? */
+/* * Convert images to .webp */
+/* * Change title depending on page */
+/* * Fix nav margins */
+
+/* #endregion ! */
+
+/* #region ! Global */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, button, ul, li, th, td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+span, h1, h2, h3, h4, h5, p, a, button, ul, li, th, td {
+    font-family: arial;
+}
+
+:root {
+    --main-color: #007074;
+    --secondary-color: #0c999e;
+}
+
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+body {
+    background: url("/assets/images/background_3.webp") center center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+h1 {
+    font-size: 32px;
+}
+h2 {
+    margin: 40px 0px;
+    font-size: 36px;
+}
+h3 {
+    margin: 50px 0px 20px 0px;
+    font-size: 20px;
+}
+h4 {
+    margin: 30px 0px 10px 0px;
+    font-size: 16px;
+}
+h5 {
+    font-size: 12px;
+}
+p {
+    margin: 10px 0px 20px 0px;
+}
+p.smaller-p {
+    font-size: 12px;
+}
+ul {
+    margin-left: 40px;
+}
+img {
+    margin-bottom: 32px;
+}
+.issue-container {
+    width: 1000px;
+    margin: 150px 0px 50px 150px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+article {
+    width: 600px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+    border: 15px solid white;
+    outline: 1px solid black;
+    outline-offset: -15px;
+}
+
+th, td {
+    border: 1px solid rgb(80, 80, 80);
+    font-size: 24px;
+    padding: 2px 4px;
+    vertical-align: top;
+    text-align: left;
+}
+
+
+/* #endregion ! */
+/* #region ! Header */
+header {
+    height: 80px;
+    width: 100vw;
+    z-index: 1;
+    background: linear-gradient(var(--main-color), var(--secondary-color));
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.477);
+}
+#bmbc-logo-link {
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background: url("/assets/images/barnsley_council.svg") center center/cover no-repeat;
+}
+/* #endregion ! */
+/* #region ! Nav */
+
+
+
+#documents-nav:not(.word) > .sb-word, #documents-nav:not(.excel) > .sb-excel, #documents-nav:not(.powerpoint) .sb-powerpoint, #documents-nav:not(.acrobat) > .sb-acrobat {
+    display: none;
+}
+#documents-nav.word > .sb-word, #documents-nav.excel > .sb-excel, #documents-nav.powerpoint > .sb-powerpoint, #documents-nav.acrobat > .sb-acrobat {
+    display: block;
+    margin: 1px;
+    height: 40px;
+    width: 180px;
+    font-size: 16px;
+    line-height: 36px;
+}
+
+
+.mb {
+    margin: 3px 3px 0px 0px;
+    height: 50px;
+    width: 220px;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+
+
+
+#documents-nav {
+    background-color: #5C9EAD;
+    height: calc(100vh - 80px);
+    width: 250px;
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    overflow-y: scroll;
+    padding: 10px 0px 0px 5px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.31);
+}
+
+
+#documents-nav > button, #documents-nav > a {
+    background-color: aliceblue;
+    text-decoration: none;
+    text-align: start;
+    padding-left: 5px;
+    color: black;
+    border-radius: 5px;
+    border: 2px solid black; /* ! will need changing for accessibility */
+    position: relative;
+    cursor: pointer;
+}
+
+#documents-nav > button:hover, #documents-nav > a:hover {
+    background-color: rgb(197, 222, 244);
+}
+
+
+
+.mb::before {
+    content: "";
+    height: 36px;
+    width: 36px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: url("/assets/icons/software_icons.svg") no-repeat;
+    background-size: 400%;
+}
+
+.mb:nth-of-type(2)::before {
+    background-position: 33.5%;
+}
+.mb:nth-of-type(3)::before {
+    background-position: 66.9%;
+}
+.mb:nth-of-type(4)::before {
+    background-position: 100%;
+}
+
+.nav-bottom {
+    height: 20px;
+    width: 100%;
+
+}
+/* #endregion ! */
+/* #region ! Slideshows */
+.tutorial-slideshow-outer {
+    height: 500px;
+    width: 900px;
+    position: relative;
+    overflow: hidden;
+}
+.tutorial-slideshow-inner {
+    height: 500px;
+    width: 4500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.4s ease;
+}
+
+.slide-number {
+    height: 32px;
+    width: 100px;
+    position: absolute;
+    bottom: 0px;
+    left: 400px;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgba(0, 0, 0, 0.307);
+    text-align: center;
+    padding: 5px;
+}
+
+.arrow {
+    height: 60px;
+    width: 50px;
+    position: absolute;
+    top: 225px;
+    background: url("/assets/icons/arrow.svg") center center/cover no-repeat;
+    z-index: 1;
+    background-size: 90%;
+    background-color: rgba(255, 255, 255, 0.616);
+    border: 2px solid rgba(0, 0, 0, 0.307);
+    cursor: pointer;
+}
+
+.arrow:hover {
+    background-color: rgba(188, 188, 188, 0.597);
+}
+
+.left-arrow {
+    left: 6px;
+    transform: rotate(180deg);
+}
+.right-arrow {
+    right: 6px;
+}
+
+.tutorial-slide {
+    height: 500px;
+    width: 900px;
+    display: block;
+    background-size: 92% !important;
+}
+.tutorial-slideshow.slide-1 > .tutorial-slideshow-inner {
+    transform: translateX(0px);
+}
+.tutorial-slideshow-outer.slide-2 > .tutorial-slideshow-inner {
+    transform: translateX(-900px);
+}
+.tutorial-slideshow-outer.slide-3 > .tutorial-slideshow-inner {
+    transform: translateX(-1800px);
+}
+.tutorial-slideshow-outer.slide-4 > .tutorial-slideshow-inner {
+    transform: translateX(-2700px);
+}
+.tutorial-slideshow-outer.slide-5 > .tutorial-slideshow-inner {
+    transform: translateX(-3600px);
+}
+/* #endregion ! */
+
+/* & Word */
+/* #region ? Accessibility checker */
+#word-open-accessibility-checker-inner-container > div:nth-child(1) {
+    background: url("/assets/images/slides/word/accessibility-checker/slide-1.webp") center center/cover no-repeat;
+}
+#word-open-accessibility-checker-inner-container > div:nth-child(2) {
+    background: url("/assets/images/slides/word/accessibility-checker/slide-2.webp") center center/cover no-repeat;
+}
+#word-open-accessibility-checker-inner-container > div:nth-child(3) {
+    background: url("/assets/images/slides/word/accessibility-checker/slide-3.webp") center center/cover no-repeat;
+}
+/* #endregion ? */
+/* #region ? Contrast */
+.contrast-example {
+    height: 45px;
+    width: 200px;
+    margin: 5px;
+    padding: 2px 0px 0px 10px;
+}
+
+.contrast-example:nth-of-type(1) {
+    background-color: black;
+    color: rgb(255, 255, 30);
+    
+}
+.contrast-example:nth-of-type(2) {
+    background-color: rgb(221, 186, 254);
+    color: rgb(0, 0, 0);
+}
+.contrast-example:nth-of-type(3) {
+    background-color: rgb(0, 111, 229);
+    color: rgb(253, 253, 253);
+}
+.contrast-example:nth-of-type(4) {
+    background-color: rgb(96, 13, 174);
+    color: rgb(0, 0, 0);
+}
+.contrast-example:nth-of-type(5) {
+    background-color: rgb(18, 252, 42);
+    color: rgb(244, 243, 245);
+}
+.contrast-example:nth-of-type(6) {
+    background-color: rgb(247, 133, 255);
+    color: rgb(246, 0, 0);
+}
+
+#word-check-contrast-word-inner-container > div:nth-child(1) {
+    background: url("/assets/images/slides/word/contrast/slide-1.webp") center center/cover no-repeat;
+}
+#word-check-contrast-word-inner-container > div:nth-child(2) {
+    background: url("/assets/images/slides/word/contrast/slide-2.webp") center center/cover no-repeat;
+}
+#word-check-contrast-word-inner-container > div:nth-child(3) {
+    background: url("/assets/images/slides/word/contrast/slide-3.webp") center center/cover no-repeat;
+}
+/* #endregion ? */
+/* #region ? Fonts */
+#font-types-word > li:nth-of-type(2) {
+    font-family: Calibri;
+}
+#font-types-word > li:nth-of-type(3) {
+    font-family: Helvetica;
+}
+#font-types-word > li:nth-of-type(4) {
+    font-family: Tahoma;
+}
+#font-types-word > li:nth-of-type(5) {
+    font-family: 'Times New Roman';
+}
+#font-types-word > li:nth-of-type(6) {
+    font-family: Verdana;
+}
+
+#font-styles-word > li:nth-of-type(1) {
+    font-weight: bold;
+}
+#font-styles-word > li:nth-of-type(3) {
+    font-style: italic;
+}
+#font-styles-word > li:nth-of-type(4) {
+    text-decoration: underline;
+}
+/* #endregion ? */
+/* #region ? Footnotes */
+span.footnote {
+    font-size: 9px;
+}
+/* #endregion ? */
+/* #region ? Headings */
+#word-headings-inner-container > div:nth-child(1) {
+    background: url("/assets/images/slides/word/headings/slide-1.webp") center center/cover no-repeat;
+}
+#word-headings-inner-container > div:nth-child(2) {
+    background: url("/assets/images/slides/word/headings/slide-2.webp") center center/cover no-repeat;
+}
+#word-headings-inner-container > div:nth-child(3) {
+    background: url("/assets/images/slides/word/headings/slide-3.webp") center center/cover no-repeat;
+}
+#word-headings-inner-container > div:nth-child(4) {
+    background: url("/assets/images/slides/word/headings/slide-4.webp") center center/cover no-repeat;
+}
+/* #endregion ? */
+/* #region ? Hyperlinks */
+#word-hyperlinks-inner-container > div:nth-child(1) {
+    background: url("/assets/images/slides/word/hyperlinks/slide-1.webp") center center/cover no-repeat;
+}
+#word-hyperlinks-inner-container > div:nth-child(2) {
+    background: url("/assets/images/slides/word/hyperlinks/slide-2.webp") center center/cover no-repeat;
+}
+#word-hyperlinks-inner-container > div:nth-child(3) {
+    background: url("/assets/images/slides/word/hyperlinks/slide-3.webp") center center/cover no-repeat;
+}
+#word-hyperlinks-inner-container > div:nth-child(4) {
+    background: url("/assets/images/slides/word/hyperlinks/slide-4.webp") center center/cover no-repeat;
+}
+#word-hyperlinks-inner-container > div:nth-child(5) {
+    background: url("/assets/images/slides/word/hyperlinks/slide-5.webp") center center/cover no-repeat;
+}
+/* #endregion ? */
+/* #region ? Images */
+
+#word-images-inner-container > div:nth-child(1) {
+    background: url("/assets/images/slides/word/images-alt-text/slide-1.webp") center center/cover no-repeat;
+}
+#word-images-inner-container > div:nth-child(2) {
+    background: url("/assets/images/slides/word/images-alt-text/slide-2.webp") center center/cover no-repeat;
+}
+#word-images-inner-container > div:nth-child(3) {
+    background: url("/assets/images/slides/word/images-alt-text/slide-3.webp") center center/cover no-repeat;
+}
+/* #endregion ? */
+/* #region ? Readability */
+#word-readability-inner-container > div:nth-child(1) {
+    background: url("/assets/images/slides/word/readability/slide-1.webp") center center/cover no-repeat;
+}
+#word-readability-inner-container > div:nth-child(2) {
+    background: url("/assets/images/slides/word/readability/slide-2.webp") center center/cover no-repeat;
+}
+#word-readability-inner-container > div:nth-child(3) {
+    background: url("/assets/images/slides/word/readability/slide-3.webp") center center/cover no-repeat;
+}
+#word-readability-inner-container > div:nth-child(4) {
+    background: url("/assets/images/slides/word/readability/slide-4.webp") center center/cover no-repeat;
+}
+/* #endregion ? */
+/* #region ? Missing table header */
+#word-missing-table-header-inner-container > div:nth-child(1) {
+    background: url("/assets/images/slides/word/missing-table-header/slide-1.webp") center center/cover no-repeat;
+}
+#word-missing-table-header-inner-container > div:nth-child(2) {
+    background: url("/assets/images/slides/word/missing-table-header/slide-2.webp") center center/cover no-repeat;
+}
+#word-missing-table-header-inner-container > div:nth-child(3) {
+    background: url("/assets/images/slides/word/missing-table-header/slide-3.webp") center center/cover no-repeat;
+}
+/* #endregion ? */
+
+/* & Excel */
+/* #region ? Accessibility checker */
+#excel-open-accessibility-checker-inner-container > div:nth-child(1) {
+    background: url("/assets/images/slides/excel/accessibility-checker/slide-1.webp") center center/cover no-repeat;
+}
+#excel-open-accessibility-checker-inner-container > div:nth-child(2) {
+    background: url("/assets/images/slides/excel/accessibility-checker/slide-2.webp") center center/cover no-repeat;
+}
+#excel-open-accessibility-checker-inner-container > div:nth-child(3) {
+    background: url("/assets/images/slides/excel/accessibility-checker/slide-3.webp") center center/cover no-repeat;
+}
+/* #endregion ? */
+/* #region ? Contrast */
+#excel-check-contrast-inner-container > div:nth-child(1) {
+    background: url("/assets/images/slides/excel/contrast/slide-1.webp") center center/cover no-repeat;
+}
+#excel-check-contrast-inner-container > div:nth-child(2) {
+    background: url("/assets/images/slides/excel/contrast/slide-2.webp") center center/cover no-repeat;
+}
+#excel-check-contrast-inner-container > div:nth-child(3) {
+    background: url("/assets/images/slides/excel/contrast/slide-3.webp") center center/cover no-repeat;
+}
+/* #endregion ? */
+/* #region ? Hyperlinks */
+#excel-hyperlinks-inner-container > div:nth-child(1) {
+    background: url("/assets/images/slides/excel/hyperlinks/slide-1.webp") center center/cover no-repeat;
+}
+#excel-hyperlinks-inner-container > div:nth-child(2) {
+    background: url("/assets/images/slides/excel/hyperlinks/slide-2.webp") center center/cover no-repeat;
+}
+#excel-hyperlinks-inner-container > div:nth-child(3) {
+    background: url("/assets/images/slides/excel/hyperlinks/slide-3.webp") center center/cover no-repeat;
+}
+#excel-hyperlinks-inner-container > div:nth-child(4) {
+    background: url("/assets/images/slides/excel/hyperlinks/slide-4.webp") center center/cover no-repeat;
+}
+#excel-hyperlinks-inner-container > div:nth-child(5) {
+    background: url("/assets/images/slides/excel/hyperlinks/slide-5.webp") center center/cover no-repeat;
+}
+/* #endregion ? */
+/* #region ? Images */
+#excel-images-inner-container > div:nth-child(1) {
+    background: url("/assets/images/slides/excel/images-alt-text/slide-1.webp") center center/cover no-repeat;
+}
+#excel-images-inner-container > div:nth-child(2) {
+    background: url("/assets/images/slides/excel/images-alt-text/slide-2.webp") center center/cover no-repeat;
+}
+#excel-images-inner-container > div:nth-child(3) {
+    background: url("/assets/images/slides/excel/images-alt-text/slide-3.webp") center center/cover no-repeat;
+}
+/* #endregion ? */
+/* #region ? Sheet names */
+#excel-sheet-names-inner-container > div:nth-child(1) {
+    background: url("/assets/images/slides/excel/sheet-names/slide-1.webp") center center/cover no-repeat;
+}
+#excel-sheet-names-inner-container > div:nth-child(2) {
+    background: url("/assets/images/slides/excel/sheet-names/slide-2.webp") center center/cover no-repeat;
+}
+#excel-sheet-names-inner-container > div:nth-child(3) {
+    background: url("/assets/images/slides/excel/sheet-names/slide-3.webp") center center/cover no-repeat;
+}
+/* #endregion ? */
+
+/* & PowerPoint */
+/* #region ? Accessibility checker */
+#powerpoint-open-accessibility-checker-inner-container > div:nth-child(1) {
+    background: url("/assets/images/slides/powerpoint/accessibility-checker/slide-1.webp") center center/cover no-repeat;
+}
+#powerpoint-open-accessibility-checker-inner-container > div:nth-child(2) {
+    background: url("/assets/images/slides/powerpoint/accessibility-checker/slide-2.webp") center center/cover no-repeat;
+}
+#powerpoint-open-accessibility-checker-inner-container > div:nth-child(3) {
+    background: url("/assets/images/slides/powerpoint/accessibility-checker/slide-3.webp") center center/cover no-repeat;
+}
+/* #endregion ? */
+/* #region ? Contrast */
+#powerpoint-check-contrast-inner-container > div:nth-child(1) {
+    background: url("/assets/images/slides/powerpoint/contrast/slide-1.webp") center center/cover no-repeat;
+}
+#powerpoint-check-contrast-inner-container > div:nth-child(2) {
+    background: url("/assets/images/slides/powerpoint/contrast/slide-2.webp") center center/cover no-repeat;
+}
+#powerpoint-check-contrast-inner-container > div:nth-child(3) {
+    background: url("/assets/images/slides/powerpoint/contrast/slide-3.webp") center center/cover no-repeat;
+}
+/* #endregion ? */
+/* #region ? Hyperlinks */
+#powerpoint-hyperlinks-inner-container > div:nth-child(1) {
+    background: url("/assets/images/slides/powerpoint/hyperlinks/slide-1.webp") center center/cover no-repeat;
+}
+#powerpoint-hyperlinks-inner-container > div:nth-child(2) {
+    background: url("/assets/images/slides/powerpoint/hyperlinks/slide-2.webp") center center/cover no-repeat;
+}
+#powerpoint-hyperlinks-inner-container > div:nth-child(3) {
+    background: url("/assets/images/slides/powerpoint/hyperlinks/slide-3.webp") center center/cover no-repeat;
+}
+#powerpoint-hyperlinks-inner-container > div:nth-child(4) {
+    background: url("/assets/images/slides/powerpoint/hyperlinks/slide-4.webp") center center/cover no-repeat;
+}
+#powerpoint-hyperlinks-inner-container > div:nth-child(5) {
+    background: url("/assets/images/slides/powerpoint/hyperlinks/slide-5.webp") center center/cover no-repeat;
+}
+/* #endregion ? */
+/* #region ? Images */
+#powerpoint-images-inner-container > div:nth-child(1) {
+    background: url("/assets/images/slides/powerpoint/images-alt-text/slide-1.webp") center center/cover no-repeat;
+}
+#powerpoint-images-inner-container > div:nth-child(2) {
+    background: url("/assets/images/slides/powerpoint/images-alt-text/slide-2.webp") center center/cover no-repeat;
+}
+#powerpoint-images-inner-container > div:nth-child(3) {
+    background: url("/assets/images/slides/powerpoint/images-alt-text/slide-3.webp") center center/cover no-repeat;
+}
+/* #endregion ? */
+/* #region ? Missing audio or video subtitles */
+#powerpoint-missing-audio-or-video-subtitles-inner-container > div:nth-child(1) {
+    background: url("/assets/images/slides/powerpoint/missing-audio-or-video-subtitles/slide-1.webp") center center/cover no-repeat;
+}
+#powerpoint-missing-audio-or-video-subtitles-inner-container > div:nth-child(2) {
+    background: url("/assets/images/slides/powerpoint/missing-audio-or-video-subtitles/slide-2.webp") center center/cover no-repeat;
+}
+#powerpoint-missing-audio-or-video-subtitles-inner-container > div:nth-child(3) {
+    background: url("/assets/images/slides/powerpoint/missing-audio-or-video-subtitles/slide-3.webp") center center/cover no-repeat;
+}
+#powerpoint-missing-audio-or-video-subtitles-inner-container > div:nth-child(4) {
+    background: url("/assets/images/slides/powerpoint/missing-audio-or-video-subtitles/slide-4.webp") center center/cover no-repeat;
+}
+#powerpoint-missing-audio-or-video-subtitles-inner-container > div:nth-child(5) {
+    background: url("/assets/images/slides/powerpoint/missing-audio-or-video-subtitles/slide-5.webp") center center/cover no-repeat;
+}
+/* #endregion ? */
+/* #region ? Missing slide title */
+#powerpoint-missing-slide-title-inner-container > div:nth-child(1) {
+    background: url("/assets/images/slides/powerpoint/missing-slide-title/slide-1.webp") center center/cover no-repeat;
+}
+#powerpoint-missing-slide-title-inner-container > div:nth-child(2) {
+    background: url("/assets/images/slides/powerpoint/missing-slide-title/slide-2.webp") center center/cover no-repeat;
+}
+#powerpoint-missing-slide-title-inner-container > div:nth-child(3) {
+    background: url("/assets/images/slides/powerpoint/missing-slide-title/slide-3.webp") center center/cover no-repeat;
+}
+/* #endregion ? */
+/* #region ? Missing table header */
+#powerpoint-missing-table-header-inner-container > div:nth-child(1) {
+    background: url("/assets/images/slides/powerpoint/missing-table-header/slide-1.webp") center center/cover no-repeat;
+}
+#powerpoint-missing-table-header-inner-container > div:nth-child(2) {
+    background: url("/assets/images/slides/powerpoint/missing-table-header/slide-2.webp") center center/cover no-repeat;
+}
+#powerpoint-missing-table-header-inner-container > div:nth-child(3) {
+    background: url("/assets/images/slides/powerpoint/missing-table-header/slide-3.webp") center center/cover no-repeat;
+}
+/* #endregion ? */

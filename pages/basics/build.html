@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>barnsley Council Design Guide</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+
+
+<body>
+    
+    <header>
+        <a id="logo-link" href="/"></a>
+        <p></p>
+    </header>
+
+    <nav>
+        <h2 class="nav-header">Basics</h2>
+        <a class="nav-link" href="/pages/basics/standards.html">Standards</a>
+        <a class="nav-link" href="/pages/basics/build.html">Build</a>
+        <a class="nav-link" href="/pages/basics/principles.html">Principles</a>
+        <a class="nav-link" href="/pages/basics/checklist.html">Checklist</a>
+        <div class="nav-divider"></div>
+
+        <h2 class="nav-header">Copywriting</h2>
+        <a class="nav-link" href="/pages/copywriting/introduction.html">Introduction</a>
+        <a class="nav-link" href="/pages/copywriting/our_voice.html">Our voice</a>
+        <a class="nav-link" href="/pages/copywriting/tips_for_better_writing.html">Tips for better writing</a>
+        <a class="nav-link" href="/pages/copywriting/search_engine_optimisation.html">Search engine optimisation</a>
+        <a class="nav-link" href="/accessibility_toolkit/home.html">Accessibility toolkit</a>
+        <a class="nav-link" href="/pages/copywriting/our_editorial_style.html">Our editorial style</a>
+        <div class="nav-divider"></div>
+
+        <h2 class="nav-header">Foundations</h2>
+        <a class="nav-link" href="/pages/foundations/colours.html">Colours</a>
+        <a class="nav-link" href="/pages/foundations/iconography.html">Iconography</a>
+        <a class="nav-link" href="/pages/foundations/logo.html">Logo</a>
+        <a class="nav-link" href="/pages/foundations/photography.html">Photography</a>
+        <a class="nav-link" href="/pages/foundations/typography.html">Typography</a>
+        <div class="nav-divider"></div>
+
+        <h2 class="nav-header">Objects</h2>
+        <a class="nav-link" href="/pages/objects/container.html">Container</a>
+        <a class="nav-link" href="/pages/objects/grid.html">Grid</a>
+        <a class="nav-link" href="/pages/objects/image.html">Image</a>
+        <a class="nav-link" href="/pages/objects/media.html">Media</a>
+        <a class="nav-link" href="/pages/objects/nav.html">Nav</a>
+        <a class="nav-link" href="/pages/objects/search.html">Search</a>
+        <a class="nav-link" href="/pages/objects/ui-list.html">UI List</a>
+        <div class="nav-divider"></div>
+    </nav>
+
+    <div id="main-container" class="container">
+        <h1>Build</h1>
+        <h2>Project structure</h2>
+        <ul>
+            <li>SASS</li>
+            <li>ITCSS</li>
+            <li>Responsive Design</li>
+            <li>Javascript</li>
+            <li>Require.JS</li>
+        </ul>
+        <h2>Developer Build Guide</h2>
+        <p>You should checkout the Barnsley Council SCSS files and create your own _manifest.scss in your project.</p>
+        <p>Customising your manifest file allows you to only include the CSS rules for components you intend to use reducing bloat and creating leaner, faster applications.</p>
+        <p>We use <a href="https://requirejs.org/">Require.js</a> to handle Javascript loading. This means you don’t need to worry about execution order or dependency management. You can also automatically combine and minify only your used dependencies automatically when ready for production to minimize HTTP requests.</p>
+        <h3>Required tools</h3>
+        <ul>
+            <li>Node.js</li>
+            <li>Gulp</li>
+            <li class="indented-list-item">gulp-sass</li>
+            <li class="indented-list-item">gulp-minify-css</li>
+            <li class="indented-list-item">gulp-rename</li>
+            <li class="indented-list-item">gulp-autoprefixer</li>
+            <li class="indented-list-item">del</li>
+            <li>sass</li>
+        </ul>
+        <h3>Barebones installation</h3>
+        <p class="highlight-blue"><strong>Pro-tip</strong> If you're already working with a project with a <strong>package.json</strong> in the root directory you can skip the barebones installation.</p>
+        <p>install <a href="https://nodejs.org/en">Node.js</a>.</p>
+        <p>Next up we'll install gulp:</p>
+        <p class="highlight-grey">$ npm install gulp -g</p>
+        <p>This installs gulp globally so you can access it's CLI from anywhere. You also need to install it locally to the project:</p>
+        <p class="highlight-grey">$ npm install gulp --save-dev</p>
+        <p>Following that request the required dependencies using</p>
+        <p class="highlight-grey">$ npm install gulp-sass gul-minify-css gulp-rename gulp-autoprefixer del --save-dev</p>
+        <p>Then create a gulpfile.js and configure it as needed.</p>
+        <h3>Download the dependencies</h3>
+        <p>Run npm install to download the required dependencies prior to building.</p>
+        <h3>Build process</h3>
+        <p>Run gulp build to compile your Sass to CSS.</p>
+        <p>Run node r.js -o build.js to compile your Javascript dependencies.</p>
+        <p>These can be defined as pre-build steps in your project.</p>
+    </div>
+
+    
+</body>
+</html>

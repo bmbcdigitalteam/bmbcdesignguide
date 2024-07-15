@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>barnsley Council Design Guide</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+
+
+<body>
+
+    <header>
+        <a id="logo-link" href="/"></a>
+        <p></p>
+    </header>
+
+    <nav>
+        <h2 class="nav-header">Basics</h2>
+        <a class="nav-link" href="/pages/basics/standards.html">Standards</a>
+        <a class="nav-link" href="/pages/basics/build.html">Build</a>
+        <a class="nav-link" href="/pages/basics/principles.html">Principles</a>
+        <a class="nav-link" href="/pages/basics/checklist.html">Checklist</a>
+        <div class="nav-divider"></div>
+
+        <h2 class="nav-header">Copywriting</h2>
+        <a class="nav-link" href="/pages/copywriting/introduction.html">Introduction</a>
+        <a class="nav-link" href="/pages/copywriting/our_voice.html">Our voice</a>
+        <a class="nav-link" href="/pages/copywriting/tips_for_better_writing.html">Tips for better writing</a>
+        <a class="nav-link" href="/pages/copywriting/search_engine_optimisation.html">Search engine optimisation</a>
+        <a class="nav-link" href="/accessibility_toolkit/home.html">Accessibility toolkit</a>
+        <a class="nav-link" href="/pages/copywriting/our_editorial_style.html">Our editorial style</a>
+        <div class="nav-divider"></div>
+
+        <h2 class="nav-header">Foundations</h2>
+        <a class="nav-link" href="/pages/foundations/colours.html">Colours</a>
+        <a class="nav-link" href="/pages/foundations/iconography.html">Iconography</a>
+        <a class="nav-link" href="/pages/foundations/logo.html">Logo</a>
+        <a class="nav-link" href="/pages/foundations/photography.html">Photography</a>
+        <a class="nav-link" href="/pages/foundations/typography.html">Typography</a>
+        <div class="nav-divider"></div>
+
+        <h2 class="nav-header">Objects</h2>
+        <a class="nav-link" href="/pages/objects/container.html">Container</a>
+        <a class="nav-link" href="/pages/objects/grid.html">Grid</a>
+        <a class="nav-link" href="/pages/objects/image.html">Image</a>
+        <a class="nav-link" href="/pages/objects/media.html">Media</a>
+        <a class="nav-link" href="/pages/objects/nav.html">Nav</a>
+        <a class="nav-link" href="/pages/objects/search.html">Search</a>
+        <a class="nav-link" href="/pages/objects/ui-list.html">UI List</a>
+        <div class="nav-divider"></div>
+    </nav>
+
+    <div id="main-container" class="container">
+        <h1>Principles</h1>
+        <p>General design principles</p>
+        <p>Status production</p>
+        <h2>Form principles</h2>
+        <p>These are principles that you should keep in mind when building forms so we can provide customers a
+            consistent experience that exceeds their expectations.</p>
+        <h3>Personal details</h3>
+        <p>We should only ask for personal details when customers need access to their private information. Reporting
+            something to us that is not personal to the customer should be possible anonymously.</p>
+        <h3>Important first & gradual engagement</h3>
+        <p>When presenting forms to customers the most important information should be the first questions we ask. For
+            example; When reporting graffiti the first information the customer should be asked for is the location of
+            the graffiti.</p>
+        <p>When the customer is filling in an e-form we should collect information in the following order:</p>
+        <ul>
+            <li>Incident details</li>
+            <li>Personal details</li>
+            <li>Payment details</li>
+        </ul>
+        <h3>Fewer fields</h3>
+        <p>Capture only the data you need, every additional form field increases the likelyhood of a customer abandoning
+            the transaction.</p>
+        <h3>Exposing Options</h3>
+        <p>When a small amount of options (generally less than 4) are available, don't hide them in a dropdown box they
+            should be exposed via checkboxes or radio buttons.</p>
+        <h3>Showing state</h3>
+        <p>Make sure it's clear how far a customer is through a given journey, show them the number of steps they're on
+            and how far through they are - and make sure important details such as the number of items and total value
+            of the basket are visible throughout the journey.</p>
+        <h3>Design for zero data</h3>
+        <p>Use zero data states to provide an indication of what to do next; for example, rather than simply stating
+            'Your shopping cart is empty'. You should provide a simple, natural language link to add a reference number
+            in order to make a payment as shown in the below example:</p>
+        <p class="highlight-blue">Your shopping cart is empty - <a href="">add your payment</a></p>
+        <h3>Smart defaults</h3>
+        <p>If we have enough information to suggest a smart default for a customer, we should pre-fill this information
+            for them; for example, if a customer needs to provide both a billing and delivery address, it's a reasonable
+            assumption that they will be the same - the second address should be pre-filled with the first. Although it
+            should still be easy to change and replace these values.</p>
+        <h3>Forgiving formats</h3>
+        <p>When asking for user entry, rather than using complicated input types that require several mouse clicks, we
+            should allow input in natural language and intepret it accurately on the server.</p>
+        <p>For example; when asking for a duration in time in hours 2.5 and 2:30 should be interpreted as 2 and a half
+            hours.</p>
+        <p>Whenever a forgiving format is used we should provide a confirmation to verify we've interpreted the format
+            correctly before completing a transaction.</p>
+        <h3>Inline validation</h3>
+        <p>We should provide client side inline validation in addition to server side validation on forms to allow quick
+            error error corrections.</p>
+        <h3>Progressive disclosure</h3>
+        <p>Form fields should only be displayed when they are relevant; For example, when we ask a customer if they wish
+            to be anonymous or provide their details we shouldn't display fields asking for their personal details until
+            they have opted for this option.</p>
+        <h3>Natural language</h3>
+        <p>We may have circumstances where our form entry would benefit from natural language input, particularly when
+            confirming details back to customers to allow them to change the entry prior to submission.</p>
+        <!-- <div id="transparent-box"> -->
+            <p class="transparent-box">I'd like you to collect <input id="bags-input" type="number" name="bags-input" max="20"> bags of 
+                <select name="waste-type" id="waste-type">
+                    <option value="clinical waste">clinical waste</option>
+                    <option value="business waste">business waste</option>
+                    <option value="other waste">other waste</option>
+                </select> 
+                for disposal for 
+                <select name="who-for" id="who-for">
+                    <option value="me">me</option>
+                    <option value="someone else">someone else</option>
+                </select> </p>
+        <!-- </div> -->
+        <h3>Set expectations</h3>
+        <p>Prior to completing a transaction, or during feedback - we should provide an indication where possible of how
+            long it will take for any recognizable outcome as a result of their query.</p>
+        <h3>Provide feedback</h3>
+        <p>When completing any activity, clear feedback should be shown to the user relating to the outcome. For
+            example; submitting an e-form should thank the user for their report (and if possible provide a reference
+            number).</p>
+        <p>The same is true for internal applications, when users perform operations against data feedback should be
+            displayed. For example; a list of documents which can be added or deleted, both these operations should
+            display a feedback message.</p>
+    </div>
+
+
+</body>
+
+</html>
