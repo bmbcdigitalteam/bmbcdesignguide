@@ -58,7 +58,7 @@ header {
     position: absolute;
     top: 10px;
     right: 10px;
-    background: url("assets/icons/menu_icon.png") center center/cover no-repeat;
+    background: url("./assets/icons/menu_icon.png") center center/cover no-repeat;
     outline: none;
     border: none;
     cursor: pointer;
