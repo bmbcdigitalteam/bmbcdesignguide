@@ -82,7 +82,7 @@ header {
 }
 
 #open_nav_btn:hover {
-    filter: drop-shadow(2px 4px 6px black);
+    filter: drop-shadow(0px 0px 15px silver);
 }
 
 nav {
