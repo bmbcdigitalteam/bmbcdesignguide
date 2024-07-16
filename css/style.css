@@ -142,6 +142,11 @@ p.highlight-blue, div.highlight-blue {
     background-color: rgb(183, 194, 228);
     padding: 20px;
 }
+
+div.highlight-blue {
+    margin-bottom: 50px;
+}
+
 p.highlight-grey {
     background-color: rgb(226, 226, 226);
     padding: 20px;
