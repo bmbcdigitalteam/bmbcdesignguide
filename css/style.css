@@ -28,6 +28,7 @@ body {
     background: url("/bmbcdesignguide/assets/images/background.jpg") center center/cover no-repeat;
     position: relative;
     overflow-x: hidden;
+    padding-bottom: 300px;
 }
 #main-container {
     width: calc(100vw - 250px);
@@ -98,7 +99,7 @@ nav {
     right: 0px;
     top: 0px;
     background-color: rgb(243, 243, 243);
-    /* height: 100%; */
+    height: 100%;
     width: 280px;
     margin-top: 80px;
     padding: 30px;
