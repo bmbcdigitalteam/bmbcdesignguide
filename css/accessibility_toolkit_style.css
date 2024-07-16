@@ -55,7 +55,7 @@ span, h1, h2, h3, h4, h5, p, a, button, ul, li, th, td {
 }
 
 body {
-    background: url("/assets/images/background_3.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/background_3.webp") center center/cover no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,7 +150,7 @@ header {
     position: absolute;
     left: 10px;
     top: 10px;
-    background: url("/assets/images/barnsley_council.svg") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/bmbcdesignguide/assets/images/barnsley_council.svg") center center/cover no-repeat;
 }
 /* #endregion ! */
 /* #region ! Nav */
@@ -219,7 +219,7 @@ header {
     position: absolute;
     top: 5px;
     right: 5px;
-    background: url("/assets/icons/software_icons.svg") no-repeat;
+    background: url("/bmbcdesignguide/bmbcdesignguide/assets/icons/software_icons.svg") no-repeat;
     background-size: 400%;
 }
 
@@ -273,7 +273,7 @@ header {
     width: 50px;
     position: absolute;
     top: 225px;
-    background: url("/assets/icons/arrow.svg") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/bmbcdesignguide/assets/icons/arrow.svg") center center/cover no-repeat;
     z-index: 1;
     background-size: 90%;
     background-color: rgba(255, 255, 255, 0.616);
@@ -319,13 +319,13 @@ header {
 /* & Word */
 /* #region ? Accessibility checker */
 #word-open-accessibility-checker-inner-container > div:nth-child(1) {
-    background: url("/assets/images/slides/word/accessibility-checker/slide-1.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/accessibility-checker/slide-1.webp") center center/cover no-repeat;
 }
 #word-open-accessibility-checker-inner-container > div:nth-child(2) {
-    background: url("/assets/images/slides/word/accessibility-checker/slide-2.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/accessibility-checker/slide-2.webp") center center/cover no-repeat;
 }
 #word-open-accessibility-checker-inner-container > div:nth-child(3) {
-    background: url("/assets/images/slides/word/accessibility-checker/slide-3.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/accessibility-checker/slide-3.webp") center center/cover no-repeat;
 }
 /* #endregion ? */
 /* #region ? Contrast */
@@ -363,13 +363,13 @@ header {
 }
 
 #word-check-contrast-word-inner-container > div:nth-child(1) {
-    background: url("/assets/images/slides/word/contrast/slide-1.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/contrast/slide-1.webp") center center/cover no-repeat;
 }
 #word-check-contrast-word-inner-container > div:nth-child(2) {
-    background: url("/assets/images/slides/word/contrast/slide-2.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/contrast/slide-2.webp") center center/cover no-repeat;
 }
 #word-check-contrast-word-inner-container > div:nth-child(3) {
-    background: url("/assets/images/slides/word/contrast/slide-3.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/contrast/slide-3.webp") center center/cover no-repeat;
 }
 /* #endregion ? */
 /* #region ? Fonts */
@@ -406,223 +406,223 @@ span.footnote {
 /* #endregion ? */
 /* #region ? Headings */
 #word-headings-inner-container > div:nth-child(1) {
-    background: url("/assets/images/slides/word/headings/slide-1.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/headings/slide-1.webp") center center/cover no-repeat;
 }
 #word-headings-inner-container > div:nth-child(2) {
-    background: url("/assets/images/slides/word/headings/slide-2.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/headings/slide-2.webp") center center/cover no-repeat;
 }
 #word-headings-inner-container > div:nth-child(3) {
-    background: url("/assets/images/slides/word/headings/slide-3.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/headings/slide-3.webp") center center/cover no-repeat;
 }
 #word-headings-inner-container > div:nth-child(4) {
-    background: url("/assets/images/slides/word/headings/slide-4.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/headings/slide-4.webp") center center/cover no-repeat;
 }
 /* #endregion ? */
 /* #region ? Hyperlinks */
 #word-hyperlinks-inner-container > div:nth-child(1) {
-    background: url("/assets/images/slides/word/hyperlinks/slide-1.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/hyperlinks/slide-1.webp") center center/cover no-repeat;
 }
 #word-hyperlinks-inner-container > div:nth-child(2) {
-    background: url("/assets/images/slides/word/hyperlinks/slide-2.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/hyperlinks/slide-2.webp") center center/cover no-repeat;
 }
 #word-hyperlinks-inner-container > div:nth-child(3) {
-    background: url("/assets/images/slides/word/hyperlinks/slide-3.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/hyperlinks/slide-3.webp") center center/cover no-repeat;
 }
 #word-hyperlinks-inner-container > div:nth-child(4) {
-    background: url("/assets/images/slides/word/hyperlinks/slide-4.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/hyperlinks/slide-4.webp") center center/cover no-repeat;
 }
 #word-hyperlinks-inner-container > div:nth-child(5) {
-    background: url("/assets/images/slides/word/hyperlinks/slide-5.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/hyperlinks/slide-5.webp") center center/cover no-repeat;
 }
 /* #endregion ? */
 /* #region ? Images */
 
 #word-images-inner-container > div:nth-child(1) {
-    background: url("/assets/images/slides/word/images-alt-text/slide-1.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/images-alt-text/slide-1.webp") center center/cover no-repeat;
 }
 #word-images-inner-container > div:nth-child(2) {
-    background: url("/assets/images/slides/word/images-alt-text/slide-2.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/images-alt-text/slide-2.webp") center center/cover no-repeat;
 }
 #word-images-inner-container > div:nth-child(3) {
-    background: url("/assets/images/slides/word/images-alt-text/slide-3.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/images-alt-text/slide-3.webp") center center/cover no-repeat;
 }
 /* #endregion ? */
 /* #region ? Readability */
 #word-readability-inner-container > div:nth-child(1) {
-    background: url("/assets/images/slides/word/readability/slide-1.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/readability/slide-1.webp") center center/cover no-repeat;
 }
 #word-readability-inner-container > div:nth-child(2) {
-    background: url("/assets/images/slides/word/readability/slide-2.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/readability/slide-2.webp") center center/cover no-repeat;
 }
 #word-readability-inner-container > div:nth-child(3) {
-    background: url("/assets/images/slides/word/readability/slide-3.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/readability/slide-3.webp") center center/cover no-repeat;
 }
 #word-readability-inner-container > div:nth-child(4) {
-    background: url("/assets/images/slides/word/readability/slide-4.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/readability/slide-4.webp") center center/cover no-repeat;
 }
 /* #endregion ? */
 /* #region ? Missing table header */
 #word-missing-table-header-inner-container > div:nth-child(1) {
-    background: url("/assets/images/slides/word/missing-table-header/slide-1.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/missing-table-header/slide-1.webp") center center/cover no-repeat;
 }
 #word-missing-table-header-inner-container > div:nth-child(2) {
-    background: url("/assets/images/slides/word/missing-table-header/slide-2.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/missing-table-header/slide-2.webp") center center/cover no-repeat;
 }
 #word-missing-table-header-inner-container > div:nth-child(3) {
-    background: url("/assets/images/slides/word/missing-table-header/slide-3.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/word/missing-table-header/slide-3.webp") center center/cover no-repeat;
 }
 /* #endregion ? */
 
 /* & Excel */
 /* #region ? Accessibility checker */
 #excel-open-accessibility-checker-inner-container > div:nth-child(1) {
-    background: url("/assets/images/slides/excel/accessibility-checker/slide-1.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/excel/accessibility-checker/slide-1.webp") center center/cover no-repeat;
 }
 #excel-open-accessibility-checker-inner-container > div:nth-child(2) {
-    background: url("/assets/images/slides/excel/accessibility-checker/slide-2.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/excel/accessibility-checker/slide-2.webp") center center/cover no-repeat;
 }
 #excel-open-accessibility-checker-inner-container > div:nth-child(3) {
-    background: url("/assets/images/slides/excel/accessibility-checker/slide-3.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/excel/accessibility-checker/slide-3.webp") center center/cover no-repeat;
 }
 /* #endregion ? */
 /* #region ? Contrast */
 #excel-check-contrast-inner-container > div:nth-child(1) {
-    background: url("/assets/images/slides/excel/contrast/slide-1.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/excel/contrast/slide-1.webp") center center/cover no-repeat;
 }
 #excel-check-contrast-inner-container > div:nth-child(2) {
-    background: url("/assets/images/slides/excel/contrast/slide-2.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/excel/contrast/slide-2.webp") center center/cover no-repeat;
 }
 #excel-check-contrast-inner-container > div:nth-child(3) {
-    background: url("/assets/images/slides/excel/contrast/slide-3.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/excel/contrast/slide-3.webp") center center/cover no-repeat;
 }
 /* #endregion ? */
 /* #region ? Hyperlinks */
 #excel-hyperlinks-inner-container > div:nth-child(1) {
-    background: url("/assets/images/slides/excel/hyperlinks/slide-1.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/excel/hyperlinks/slide-1.webp") center center/cover no-repeat;
 }
 #excel-hyperlinks-inner-container > div:nth-child(2) {
-    background: url("/assets/images/slides/excel/hyperlinks/slide-2.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/excel/hyperlinks/slide-2.webp") center center/cover no-repeat;
 }
 #excel-hyperlinks-inner-container > div:nth-child(3) {
-    background: url("/assets/images/slides/excel/hyperlinks/slide-3.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/excel/hyperlinks/slide-3.webp") center center/cover no-repeat;
 }
 #excel-hyperlinks-inner-container > div:nth-child(4) {
-    background: url("/assets/images/slides/excel/hyperlinks/slide-4.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/excel/hyperlinks/slide-4.webp") center center/cover no-repeat;
 }
 #excel-hyperlinks-inner-container > div:nth-child(5) {
-    background: url("/assets/images/slides/excel/hyperlinks/slide-5.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/excel/hyperlinks/slide-5.webp") center center/cover no-repeat;
 }
 /* #endregion ? */
 /* #region ? Images */
 #excel-images-inner-container > div:nth-child(1) {
-    background: url("/assets/images/slides/excel/images-alt-text/slide-1.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/excel/images-alt-text/slide-1.webp") center center/cover no-repeat;
 }
 #excel-images-inner-container > div:nth-child(2) {
-    background: url("/assets/images/slides/excel/images-alt-text/slide-2.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/excel/images-alt-text/slide-2.webp") center center/cover no-repeat;
 }
 #excel-images-inner-container > div:nth-child(3) {
-    background: url("/assets/images/slides/excel/images-alt-text/slide-3.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/excel/images-alt-text/slide-3.webp") center center/cover no-repeat;
 }
 /* #endregion ? */
 /* #region ? Sheet names */
 #excel-sheet-names-inner-container > div:nth-child(1) {
-    background: url("/assets/images/slides/excel/sheet-names/slide-1.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/excel/sheet-names/slide-1.webp") center center/cover no-repeat;
 }
 #excel-sheet-names-inner-container > div:nth-child(2) {
-    background: url("/assets/images/slides/excel/sheet-names/slide-2.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/excel/sheet-names/slide-2.webp") center center/cover no-repeat;
 }
 #excel-sheet-names-inner-container > div:nth-child(3) {
-    background: url("/assets/images/slides/excel/sheet-names/slide-3.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/excel/sheet-names/slide-3.webp") center center/cover no-repeat;
 }
 /* #endregion ? */
 
 /* & PowerPoint */
 /* #region ? Accessibility checker */
 #powerpoint-open-accessibility-checker-inner-container > div:nth-child(1) {
-    background: url("/assets/images/slides/powerpoint/accessibility-checker/slide-1.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/accessibility-checker/slide-1.webp") center center/cover no-repeat;
 }
 #powerpoint-open-accessibility-checker-inner-container > div:nth-child(2) {
-    background: url("/assets/images/slides/powerpoint/accessibility-checker/slide-2.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/accessibility-checker/slide-2.webp") center center/cover no-repeat;
 }
 #powerpoint-open-accessibility-checker-inner-container > div:nth-child(3) {
-    background: url("/assets/images/slides/powerpoint/accessibility-checker/slide-3.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/accessibility-checker/slide-3.webp") center center/cover no-repeat;
 }
 /* #endregion ? */
 /* #region ? Contrast */
 #powerpoint-check-contrast-inner-container > div:nth-child(1) {
-    background: url("/assets/images/slides/powerpoint/contrast/slide-1.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/contrast/slide-1.webp") center center/cover no-repeat;
 }
 #powerpoint-check-contrast-inner-container > div:nth-child(2) {
-    background: url("/assets/images/slides/powerpoint/contrast/slide-2.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/contrast/slide-2.webp") center center/cover no-repeat;
 }
 #powerpoint-check-contrast-inner-container > div:nth-child(3) {
-    background: url("/assets/images/slides/powerpoint/contrast/slide-3.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/contrast/slide-3.webp") center center/cover no-repeat;
 }
 /* #endregion ? */
 /* #region ? Hyperlinks */
 #powerpoint-hyperlinks-inner-container > div:nth-child(1) {
-    background: url("/assets/images/slides/powerpoint/hyperlinks/slide-1.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/hyperlinks/slide-1.webp") center center/cover no-repeat;
 }
 #powerpoint-hyperlinks-inner-container > div:nth-child(2) {
-    background: url("/assets/images/slides/powerpoint/hyperlinks/slide-2.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/hyperlinks/slide-2.webp") center center/cover no-repeat;
 }
 #powerpoint-hyperlinks-inner-container > div:nth-child(3) {
-    background: url("/assets/images/slides/powerpoint/hyperlinks/slide-3.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/hyperlinks/slide-3.webp") center center/cover no-repeat;
 }
 #powerpoint-hyperlinks-inner-container > div:nth-child(4) {
-    background: url("/assets/images/slides/powerpoint/hyperlinks/slide-4.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/hyperlinks/slide-4.webp") center center/cover no-repeat;
 }
 #powerpoint-hyperlinks-inner-container > div:nth-child(5) {
-    background: url("/assets/images/slides/powerpoint/hyperlinks/slide-5.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/hyperlinks/slide-5.webp") center center/cover no-repeat;
 }
 /* #endregion ? */
 /* #region ? Images */
 #powerpoint-images-inner-container > div:nth-child(1) {
-    background: url("/assets/images/slides/powerpoint/images-alt-text/slide-1.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/images-alt-text/slide-1.webp") center center/cover no-repeat;
 }
 #powerpoint-images-inner-container > div:nth-child(2) {
-    background: url("/assets/images/slides/powerpoint/images-alt-text/slide-2.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/images-alt-text/slide-2.webp") center center/cover no-repeat;
 }
 #powerpoint-images-inner-container > div:nth-child(3) {
-    background: url("/assets/images/slides/powerpoint/images-alt-text/slide-3.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/images-alt-text/slide-3.webp") center center/cover no-repeat;
 }
 /* #endregion ? */
 /* #region ? Missing audio or video subtitles */
 #powerpoint-missing-audio-or-video-subtitles-inner-container > div:nth-child(1) {
-    background: url("/assets/images/slides/powerpoint/missing-audio-or-video-subtitles/slide-1.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/missing-audio-or-video-subtitles/slide-1.webp") center center/cover no-repeat;
 }
 #powerpoint-missing-audio-or-video-subtitles-inner-container > div:nth-child(2) {
-    background: url("/assets/images/slides/powerpoint/missing-audio-or-video-subtitles/slide-2.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/missing-audio-or-video-subtitles/slide-2.webp") center center/cover no-repeat;
 }
 #powerpoint-missing-audio-or-video-subtitles-inner-container > div:nth-child(3) {
-    background: url("/assets/images/slides/powerpoint/missing-audio-or-video-subtitles/slide-3.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/missing-audio-or-video-subtitles/slide-3.webp") center center/cover no-repeat;
 }
 #powerpoint-missing-audio-or-video-subtitles-inner-container > div:nth-child(4) {
-    background: url("/assets/images/slides/powerpoint/missing-audio-or-video-subtitles/slide-4.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/missing-audio-or-video-subtitles/slide-4.webp") center center/cover no-repeat;
 }
 #powerpoint-missing-audio-or-video-subtitles-inner-container > div:nth-child(5) {
-    background: url("/assets/images/slides/powerpoint/missing-audio-or-video-subtitles/slide-5.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/missing-audio-or-video-subtitles/slide-5.webp") center center/cover no-repeat;
 }
 /* #endregion ? */
 /* #region ? Missing slide title */
 #powerpoint-missing-slide-title-inner-container > div:nth-child(1) {
-    background: url("/assets/images/slides/powerpoint/missing-slide-title/slide-1.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/missing-slide-title/slide-1.webp") center center/cover no-repeat;
 }
 #powerpoint-missing-slide-title-inner-container > div:nth-child(2) {
-    background: url("/assets/images/slides/powerpoint/missing-slide-title/slide-2.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/missing-slide-title/slide-2.webp") center center/cover no-repeat;
 }
 #powerpoint-missing-slide-title-inner-container > div:nth-child(3) {
-    background: url("/assets/images/slides/powerpoint/missing-slide-title/slide-3.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/missing-slide-title/slide-3.webp") center center/cover no-repeat;
 }
 /* #endregion ? */
 /* #region ? Missing table header */
 #powerpoint-missing-table-header-inner-container > div:nth-child(1) {
-    background: url("/assets/images/slides/powerpoint/missing-table-header/slide-1.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/missing-table-header/slide-1.webp") center center/cover no-repeat;
 }
 #powerpoint-missing-table-header-inner-container > div:nth-child(2) {
-    background: url("/assets/images/slides/powerpoint/missing-table-header/slide-2.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/missing-table-header/slide-2.webp") center center/cover no-repeat;
 }
 #powerpoint-missing-table-header-inner-container > div:nth-child(3) {
-    background: url("/assets/images/slides/powerpoint/missing-table-header/slide-3.webp") center center/cover no-repeat;
+    background: url("/bmbcdesignguide/assets/images/slides/powerpoint/missing-table-header/slide-3.webp") center center/cover no-repeat;
 }
 /* #endregion ? */
