@@ -39,7 +39,7 @@ body {
 header {
     height: 80px;
     width: 100vw;
-    background: linear-gradient(90deg, rgba(75,75,75,1) 0%, rgba(75,75,75,1) 26%, rgba(27,27,27,1) 100%);
+    background: linear-gradient(90deg, rgb(47, 47, 47) 0%, rgb(43, 43, 43) 26%, rgba(27,27,27,1) 100%);
     position: absolute;
     top: 0;
     left: 0;
