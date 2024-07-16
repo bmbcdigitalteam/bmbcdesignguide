@@ -138,7 +138,7 @@ p {
     font-size: 18px;
     margin-bottom: 20px;
 }
-p.highlight-blue {
+p.highlight-blue, div.highlight-blue {
     background-color: rgb(183, 194, 228);
     padding: 20px;
 }
@@ -394,5 +394,7 @@ div.purple > p {
 }
 
 /* #endregion ? */
+
+
 
 /* #endregion ! */
