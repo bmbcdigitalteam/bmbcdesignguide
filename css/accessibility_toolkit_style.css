@@ -616,6 +616,21 @@ span.footnote {
 }
 /* #endregion ? */
 /* #region ? Missing table header */
+#powerpoint-missing-table-header-inner-container > div:nth-child(1) {
+    background: url("../assets/images/slides/powerpoint/missing-table-header/slide-1.webp") center center/cover no-repeat;
+}
+#powerpoint-missing-table-header-inner-container > div:nth-child(2) {
+    background: url("../assets/images/slides/powerpoint/missing-table-header/slide-2.webp") center center/cover no-repeat;
+}
+#powerpoint-missing-table-header-inner-container > div:nth-child(3) {
+    background: url("../assets/images/slides/powerpoint/missing-table-header/slide-3.webp") center center/cover no-repeat;
+}
+/* #endregion ? */
+
+/* & Acrobat */
+
+/* #region ? accessibility-checker */
+
 #acrobat-open-accessibility-checker-inner-container > div:nth-child(1) {
     background: url("../assets/images/slides/acrobat/accessibility-checker/slide-1.webp") center center/cover no-repeat;
 }
@@ -628,23 +643,17 @@ span.footnote {
 #acrobat-open-accessibility-checker-inner-container > div:nth-child(4) {
     background: url("../assets/images/slides/acrobat/accessibility-checker/slide-4.webp") center center/cover no-repeat;
 }
+
 /* #endregion ? */
 
-/* & Acrobat */
+
+
 
 /* #region ? accessibility-checker */
-
-
 /* #endregion ? */
-
-
-
-
-/* #region ?  */
+/* #region ? accessibility-checker */
 /* #endregion ? */
-/* #region ?  */
+/* #region ? accessibility-checker */
 /* #endregion ? */
-/* #region ?  */
-/* #endregion ? */
-/* #region ?  */
+/* #region ? accessibility-checker */
 /* #endregion ? */
