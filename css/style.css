@@ -25,7 +25,7 @@
 body {
     width: 100vw;
     /* background-color: #f5f5f5; */
-    background: url("/bmbcdesignguide/assets/images/background.jpg") center center/cover no-repeat;
+    background: url("../assets/images/background.jpg") center center/cover no-repeat;
     position: relative;
     overflow-x: hidden;
     padding-bottom: 300px;
@@ -54,7 +54,7 @@ header {
     margin: 20px 10px;
     height: 40px;
     width: 160px;
-    background: url("/bmbcdesignguide/assets/images/barnsley_council.svg") center center/cover no-repeat;
+    background: url("../assets/images/barnsley_council.svg") center center/cover no-repeat;
     transition: 0.3s ease;
 }
 
@@ -82,7 +82,7 @@ header {
     position: absolute;
     top: 10px;
     right: 30px;
-    background: url("/bmbcdesignguide/assets/icons/menu_icon.png") center center/cover no-repeat;
+    background: url("../assets/icons/menu_icon.png") center center/cover no-repeat;
     outline: none;
     border: none;
     cursor: pointer;
